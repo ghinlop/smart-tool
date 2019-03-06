@@ -1,18 +1,1 @@
-{
-    "/dist/vuta_store/public/css/bootstrap.min.css": "/dist/vuta_store/public/css/bootstrap.min.css",
-    "/dist/vuta_store/public/css/bootstrap.min.css.map": "/dist/vuta_store/public/css/bootstrap.min.css.map",
-    "/dist/vuta_store/public/css/font-awesome.css": "/dist/vuta_store/public/css/font-awesome.css",
-    "/dist/vuta_store/public/css/font-awesome.css.map": "/dist/vuta_store/public/css/font-awesome.css.map",
-    "/dist/vuta_store/public/fonts/fontawesome-webfont.eot": "/dist/vuta_store/public/fonts/fontawesome-webfont.eot",
-    "/dist/vuta_store/public/fonts/fontawesome-webfont.svg": "/dist/vuta_store/public/fonts/fontawesome-webfont.svg",
-    "/dist/vuta_store/public/fonts/fontawesome-webfont.ttf": "/dist/vuta_store/public/fonts/fontawesome-webfont.ttf",
-    "/dist/vuta_store/public/fonts/fontawesome-webfont.woff": "/dist/vuta_store/public/fonts/fontawesome-webfont.woff",
-    "/dist/vuta_store/public/fonts/fontawesome-webfont.woff2": "/dist/vuta_store/public/fonts/fontawesome-webfont.woff2",
-    "/dist/vuta_store/public/fonts/FontAwesome.otf": "/dist/vuta_store/public/fonts/FontAwesome.otf",
-    "/dist/vuta_store/public/js/bootstrap.min.js": "/dist/vuta_store/public/js/bootstrap.min.js",
-    "/dist/vuta_store/public/js/bootstrap.min.js.map": "/dist/vuta_store/public/js/bootstrap.min.js.map",
-    "/dist/vuta_store/public/js/jquery.min.js": "/dist/vuta_store/public/js/jquery.min.js",
-    "/dist/vuta_store/public/js/jquery.min.map": "/dist/vuta_store/public/js/jquery.min.map",
-    "/dist/vuta_store/public/js/popper.min.js": "/dist/vuta_store/public/js/popper.min.js",
-    "/dist/vuta_store/public/js/popper.min.js.map": "/dist/vuta_store/public/js/popper.min.js.map"
-}
+{}
