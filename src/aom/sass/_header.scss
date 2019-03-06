@@ -1,0 +1,98 @@
+#header{
+    background-color: #0c6363;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='203' height='203' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.3'%3E%3Cpolygon fill='%23166f6f' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23166f6f' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+.header-top{
+    background-color: #083c3c;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    a{
+        display: block;
+        padding: 5px 15px;
+        font-weight: 600;
+        font-size: 10pt;
+        text-transform: uppercase;
+        @include text-color(#fff, #32cfdb);
+    }
+    li:not(:last-child){
+        border-right: 1px solid rgba(#fff, .7);
+    }
+    li:last-child{
+        a{
+            padding-right: 0;
+        }
+    }
+    .dropdown{
+        .dropdown-menu{
+            padding-top: 11px;
+            background-color: transparent;
+            box-shadow: none;
+            border: 0;
+            .content{
+                padding: 15px;
+                position: relative;
+                background-color: #d3eeee;
+                &::before{
+                    content: '';
+                    top: -10px;
+                    left: 15px;
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    border-width: 0 10px 10px 10px;
+                    border-style: solid;
+                    border-color: transparent transparent #d3eeee transparent;
+                }
+            }
+            &.dropdown-menu-right .content::before{
+                right: 15px;
+                left: unset;
+            }
+        }
+    }
+}
+.header-logo{
+    display: inline-block;
+}
+.header-search{
+    display: flex;
+    background-color: rgba(#fff, .8);
+    transition: .3s ease all;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    overflow: hidden;
+    border-radius: 5px;
+    &:hover, &:focus-within{
+        box-shadow: rgba(#333, .8) 0px 0px 96px 0px;
+    }
+    &:focus-within{
+        background-color: #fff;
+    }
+    input, button{
+        border: 0;
+        outline: 0;
+        transition: .3s ease all;
+        background-color: transparent
+    }
+    input{
+        flex-grow: 1;
+        padding: 10px 15px;
+    }
+    button{
+        padding: 10px 15px;
+        border-left: 1px solid rgba(#999, .7);
+    }
+}
+.header-cart{
+    a {
+        display: block;
+        padding: 10px;
+        @include text-color(#fff, #e1392e);
+        transition: .3s ease all;
+        .cart-icon{
+            transition: .3s ease all;
+            @include text-color(#0c6363, #fff);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+$muli: 'Muli', sans-serif;
+
+@import './mixin';
+@import './global';
+@import './header';
+
+@include color-render('green-blue', #0c6363, true);
+@include color-render('green-dark', #083c3c, true);
+
+body{
+    font-family: 'Muli', sans-serif;
+}

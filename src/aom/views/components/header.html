@@ -1,0 +1,78 @@
+<header id="header">
+    <div class="header-top">
+        <div class="container">
+            <ul class="d-flex justify-content-lg-end justify-content-center nolist">
+                {% for item in data.menu_top %}
+                    {% if loop.first %}
+                        <li class="dropdown">
+                            <a href="#" id="drop_{{loop.index}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{item}}</a>
+                            <div class="dropdown-menu" aria-labelledby="drop_{{loop.index}}" style="min-width: 300px;">
+                                <div class="d-flex content align-items-center">
+                                    <div class="py-2 pr-2">
+                                        <i class="fa fa-home fa-3x"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="text-large text-white bg-green-dark p-1">
+                                            <b>Shop Hoang Long</b>
+                                        </div>
+                                        <small class="d-block text-muted">
+                                            Thời gian hoạt động: 35 tiếng
+                                        </small>
+                                        <small class="d-block text-muted">
+                                            Đánh giá hoạt động: 3/5
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% elif loop.last %}
+                        <li class="dropdown">
+                            <a href="#" id="drop_{{loop.index}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{item}}</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop_{{loop.index}}" style="min-width: 300px;">
+                                <div class="d-flex content align-items-center p-1">
+                                    <div class="col-md-3 col-5 pr-2">
+                                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/voucher-31-766565.png" alt="">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="text-large text-green-dark p-1">
+                                            <b>Bạn có 1 voucher</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% else %}
+                        <li><a href="#">{{item}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="container py-md-4">
+        <div class="row align-items-center">
+            <div class="col-md-3">
+                <a href="#" class="header-logo">
+                    <img src="{{img('logo.png')}}" alt="">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div class="d-flex justify-content-md-end align-items-center">
+                    <form action="" method="post" class="d-block w-100">
+                        <div class="header-search">
+                            <input type="text">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="header-cart">
+                        <a href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shopping-basket fa-stack-1x cart-icon"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

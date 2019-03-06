@@ -1,0 +1,43 @@
+<div class="navbar-index">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <nav class="menu-index">
+                            <ul class="nolist d-flex flex-column">
+                                {% for item in data.navbar %}
+                                    {% if item.sub %}
+                                        <li class="narbar-dropdown">
+                                            <a href="#">{{item.name}}</a>
+                                            <div class="navbar-dropdown_content px-3">
+                                                <div class="row">
+                                                    {% for sub in item.sub %}
+                                                        <div class="col-md-4">
+                                                            <h2 class="text-large font-weight-bold">
+                                                                {{ sub.name }}
+                                                            </h2>
+                                                            <ul class="nolist d-flex flex-column">
+                                                                {% for name in sub.menu %}
+                                                                    <li><a href="#">{{name}}</a></li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </li>
+                                    {% else %}
+                                        <li><a href="#">{{ item.name }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8"></div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
