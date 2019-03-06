@@ -1,7 +1,89 @@
 {% extends 'layouts/default.html' %}
 
-{% block title %}Homepage{% endblock %}
+{% block title %}Store{% endblock %}
 
 {% block content %}
-
+<div class="container py-lg-5 py-md-4 py-3">
+    <h2 class="text-center text-primary">Giao diện khuyên dùng</h2>
+    <p class="text-mute text-center pb-5">
+        Các mẫu website bán hàng chuẩn SEO, ược kiểm soát bởi đội ngũ Haravan, để đảm bảo người dùng có trải nghiệm tốt nhất
+        giúp bạn bán hàng đa kênh hiệu quả hơn bao giờ hết.
+    </p>
+    <div id="filter">
+        <form action="" method="post" class="w-100">
+            <div class="filter-box align-items-center">
+                <div class="filter-title">
+                    Tìm Kiếm Theo
+                </div>
+                <div class="flex-grow-1 pl-3">
+                    <div class="d-flex flex-wrap py-3 filter-content">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md mb-md-0 mb-3 pr-md-0 pr-3">
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Kiểu Giao Diện</option>
+                                        <option value="1">Shopping</option>
+                                        <option value="2">Restaurant</option>
+                                    </select>
+                                </div>
+                                <div class="col-md mb-md-0 mb-3 pr-md-0 pr-3">
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Loại Giao Diện</option>
+                                        <option value="1">Free</option>
+                                        <option value="2">Premium</option>
+                                    </select>
+                                </div>
+                                <div class="col-md mb-md-0 mb-3 pr-md-0 pr-3">
+                                    <select name="" id="" class="form-control">
+                                        <option value="0">Tầm Giá</option>
+                                        <option value="1">0đ - 1,000,000đ</option>
+                                        <option value="2">2,000,000đ - 4,000,000đ</option>
+                                        <option value="2">Trên 4,000,000đ</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-block btn-outline-light">
+                                Kiểm Tra
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row auto-margin-b-5 py-3">
+        {% for item in data %} 
+            <div class="col-md-4">
+                <div class="template-box"  data-img-hover>
+                    <div class="template-body">
+                        <div class="template-name">
+                            {{ item.name }}
+                        </div>
+                        <div class="template-thumb">
+                            <img src="{{item.img}}" alt="">
+                        </div>
+                        {% if item.type == 'free' %}
+                            <div class="template-type bg-danger">
+                                {{ item.type }}
+                            </div>
+                        {% else %}
+                            <div class="template-type bg-primary">
+                                {{ item.type }}
+                            </div>
+                        {% endif %}
+                            <div class="template-price">
+                                {{ item.price }}
+                            </div>
+                    </div>
+                    <div class="template-footer">
+                        <a href="#">Xem Demo</a>
+                        <a href="#">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

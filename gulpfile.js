@@ -7,7 +7,6 @@ require('dotenv').config();
 var name = process.env.NAME || 'default';
 
 const data = require('./src/' + name + '/data.js');
-
 gulp.task('html', () => {
     return watch([
         `./src/${name}/views/pages/*.html`,

@@ -1,0 +1,393 @@
+@charset "UTF-8";
+.nolist {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-small {
+  font-size: 10pt;
+}
+
+.text-xsmall {
+  font-size: 9pt;
+}
+
+.text-normal {
+  font-size: 12pt;
+}
+
+.text-large {
+  font-size: 15pt;
+}
+
+.text-xlarge {
+  font-size: 20pt;
+}
+
+.auto-margin-1 > * {
+  margin: 0.25rem !important;
+}
+
+.auto-margin-y-1 > * {
+  margin: 0.25rem 0 !important;
+}
+
+.auto-margin-x-1 > * {
+  margin: 0 0.25rem !important;
+}
+
+.auto-margin-t-1 > * {
+  margin: 0.25rem 0 0 0 !important;
+}
+
+.auto-margin-b-1 > * {
+  margin: 0 0 0.25rem 0 !important;
+}
+
+.auto-margin-l-1 > * {
+  margin: 0 0 0 0.25rem !important;
+}
+
+.auto-margin-r-1 > * {
+  margin: 0 0.25rem 0 0 !important;
+}
+
+.auto-margin-2 > * {
+  margin: 0.5rem !important;
+}
+
+.auto-margin-y-2 > * {
+  margin: 0.5rem 0 !important;
+}
+
+.auto-margin-x-2 > * {
+  margin: 0 0.5rem !important;
+}
+
+.auto-margin-t-2 > * {
+  margin: 0.5rem 0 0 0 !important;
+}
+
+.auto-margin-b-2 > * {
+  margin: 0 0 0.5rem 0 !important;
+}
+
+.auto-margin-l-2 > * {
+  margin: 0 0 0 0.5rem !important;
+}
+
+.auto-margin-r-2 > * {
+  margin: 0 0.5rem 0 0 !important;
+}
+
+.auto-margin-3 > * {
+  margin: 0.75rem !important;
+}
+
+.auto-margin-y-3 > * {
+  margin: 0.75rem 0 !important;
+}
+
+.auto-margin-x-3 > * {
+  margin: 0 0.75rem !important;
+}
+
+.auto-margin-t-3 > * {
+  margin: 0.75rem 0 0 0 !important;
+}
+
+.auto-margin-b-3 > * {
+  margin: 0 0 0.75rem 0 !important;
+}
+
+.auto-margin-l-3 > * {
+  margin: 0 0 0 0.75rem !important;
+}
+
+.auto-margin-r-3 > * {
+  margin: 0 0.75rem 0 0 !important;
+}
+
+.auto-margin-4 > * {
+  margin: 1rem !important;
+}
+
+.auto-margin-y-4 > * {
+  margin: 1rem 0 !important;
+}
+
+.auto-margin-x-4 > * {
+  margin: 0 1rem !important;
+}
+
+.auto-margin-t-4 > * {
+  margin: 1rem 0 0 0 !important;
+}
+
+.auto-margin-b-4 > * {
+  margin: 0 0 1rem 0 !important;
+}
+
+.auto-margin-l-4 > * {
+  margin: 0 0 0 1rem !important;
+}
+
+.auto-margin-r-4 > * {
+  margin: 0 1rem 0 0 !important;
+}
+
+.auto-margin-5 > * {
+  margin: 1.25rem !important;
+}
+
+.auto-margin-y-5 > * {
+  margin: 1.25rem 0 !important;
+}
+
+.auto-margin-x-5 > * {
+  margin: 0 1.25rem !important;
+}
+
+.auto-margin-t-5 > * {
+  margin: 1.25rem 0 0 0 !important;
+}
+
+.auto-margin-b-5 > * {
+  margin: 0 0 1.25rem 0 !important;
+}
+
+.auto-margin-l-5 > * {
+  margin: 0 0 0 1.25rem !important;
+}
+
+.auto-margin-r-5 > * {
+  margin: 0 1.25rem 0 0 !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  margin: 0;
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+.template-box {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease all;
+  height: 100%;
+}
+.template-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 40px 0px;
+  -webkit-transform: scale(1.03, 1.03);
+          transform: scale(1.03, 1.03);
+}
+
+.template-body {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+.template-body img {
+  width: 100%;
+}
+
+.template-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 11pt;
+  text-align: center;
+  z-index: 2;
+}
+
+.template-type, .template-price {
+  display: inline-block;
+  padding: 3px 5px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  font-size: 10pt;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.template-type {
+  right: 0;
+  border-bottom-left-radius: 10px;
+  box-shadow: -4px 4px 15px rgba(51, 51, 51, 0.7);
+}
+
+.template-price {
+  left: 0;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  min-width: 40px;
+  text-align: center;
+  box-shadow: 4px 4px 15px rgba(51, 51, 51, 0.7);
+}
+.template-price::after {
+  content: " \111";
+}
+
+.template-thumb {
+  height: 100%;
+}
+.template-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 3.5s ease all;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.template-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.template-footer > * {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+.template-footer > *:hover {
+  color: #fff;
+}
+.template-footer a:first-child {
+  background-color: #3498db;
+}
+.template-footer a:first-child:hover {
+  background-color: #2980b9;
+}
+.template-footer a:last-child {
+  background-color: #e74c3c;
+}
+.template-footer a:last-child:hover {
+  background-color: #c0392b;
+}
+
+#filter {
+  background-color: #2980b9;
+}
+
+.filter-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.filter-title {
+  padding: 10px 15px;
+  color: #fff;
+  position: relative;
+}
+.filter-title::before, .filter-title::after {
+  content: "";
+  position: absolute;
+  border-width: 40px 0 40px 25px;
+  border-style: solid;
+  border-color: transparent;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.filter-title::before {
+  border-left-color: #2980b9;
+  right: -23px;
+  z-index: 2;
+}
+.filter-title::after {
+  border-left-color: #fff;
+  right: -25px;
+  z-index: 1;
+}
+
+select.form-control:focus {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.5);
+  outline: 0;
+  border: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .template-footer > * {
+    font-size: 10pt;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-box {
+    flex-direction: column;
+  }
+  .filter-title {
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+  }
+  .filter-title::before, .filter-title::after {
+    content: unset;
+  }
+}
