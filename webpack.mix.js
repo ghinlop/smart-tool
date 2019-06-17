@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 const autoprefixer = require('autoprefixer')
 const mqpacker = require('css-mqpacker')
+const tailwindcss = require('tailwindcss');
 const yargs = require('yargs-parser')(process.argv.slice(2));
 const scss_file = yargs.scss ? yargs.scss + '.scss' : 'app.scss';
 const js_file = yargs.js ? yargs.js + '.js' : 'app.js';
@@ -24,6 +25,7 @@ if (name) {
             mqpacker({
                 sort: true
             }),
+            tailwindcss('./tailwind.config.js'),
         ],
         processCssUrls: false
     });

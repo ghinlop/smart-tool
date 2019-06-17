@@ -1,0 +1,121 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import './mixin';
+
+#header{
+    background-color: var(--header-bg);
+    box-shadow: 1px 1px 0 1px rgba(0,0,0,0.1);
+}
+
+.is-skew{
+    position: relative;
+    z-index: 0;
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: -10%;
+        left: 0;
+        background-color: var(--bg-color);
+        background-image: var(--bg-img);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: skewY(3deg);
+    }
+}
+#map_svg {
+    path{
+        opacity:1;
+        fill:var(--map-global);
+        fill-opacity:1;
+        stroke:#ffffff;
+        stroke-width:0.17935969;
+        stroke-linecap:butt;
+        stroke-linejoin:miter;
+        stroke-miterlimit:4;
+        stroke-dasharray:none;
+        stroke-dashoffset:0;
+        stroke-opacity:1;
+    }
+    #layer13{
+        rect{
+            fill: none;
+            stroke:#0e5a9d;
+            stroke-width:0.5;
+            stroke-linecap:butt;
+            stroke-linejoin:miter;
+            stroke-miterlimit:4;
+            stroke-dasharray:none;
+            stroke-dashoffset:0;
+        }
+        #path924{
+            fill:none;
+            stroke:#0e5a9d;
+            stroke-width:0.5;
+            stroke-linecap:butt;
+            stroke-linejoin:miter;
+            stroke-miterlimit:4;
+            stroke-dasharray:none;
+            
+        }
+    }
+    .vietnam,
+    .EU,
+    .japan,
+    .china,
+    .thailan,
+    .russian,
+    .singapore,
+    .australian{
+        path{
+            transition: 0.4s ease-in-out fill;
+            fill: var(--map-color);
+        }
+        &:hover path{
+            fill: var(--map-color-hover);
+        }
+    }
+}
+
+
+    
+
+.header-banner{
+    background-size: cover;
+    background-position: center;
+    background-image: var(--gradien-bg);
+}
+canvas{
+    height: 50%;
+    opacity: .7;
+}
+
+#currency_rating{
+    a{
+        transform: scale(1,1);
+        transform-origin: bottom;
+        transition: 0.3s ease-in-out all;
+        box-shadow: 0 0 15px 3px rgba(#333, 0);
+        &:hover{
+            transform: scale(1.05, 1.1);
+            background-color: rgb(255, 221, 0);
+            box-shadow: 3px 3px 0px 3px rgba(#333, 0.4); 
+        }
+    }
+}
+#chart{
+    background-image: var(--gradien-bg);
+    .chart-box{
+        background-color: var(--bg-boxContent);
+        @include md{
+            margin-top: var(--margin-top);
+        }
+    }
+}
